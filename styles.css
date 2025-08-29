@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fbf2e9, #f9e9da);
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.ad-banner {
+  background: linear-gradient(to right, #A53860, #DA627D, #FFA5AB);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.ad-banner h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.ad-banner p {
+  font-size: 18px;
+}
+
+.artist-name, .album-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.navbar {
+  background-color: #611e39;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f1a1c9;
+}
+
+
+.album-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.album-section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #48172b;
+}
+
+.album-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.album-card {
+  background-color: white;
+  border-radius: 12px;
+  width: 220px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.album-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.album-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.album-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.album-card a {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #DA627D;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.album-card a:hover {
+  background-color: #f1a1c9;
+}
+
+
+footer {
+  background-color: #611e39;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.ad-link {
+  text-decoration: none;
+  display: block;
+}
+
+.ad-link .ad-banner {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ad-link .ad-banner:hover {
+  transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
